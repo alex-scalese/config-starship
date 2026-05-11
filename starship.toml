@@ -12,12 +12,12 @@ $character"""
 
 add_newline = true 
 
-palette = "catppuccin_mocha"
+palette = "dayfox"
 
 # Starship modules
 [character]
-success_symbol = "[[](bold teal) ❯](pink)"
-error_symbol = "[[](bold red) ❯](lavender)"
+success_symbol = "[[󰇄](bold teal) ❯](pink)"
+error_symbol = "[[󰇄](bold red) ❯](lavender)"
 vimcmd_symbol = "[ ❮](subtext1)" # For use with zsh-vi-mode
 
 [git_branch]
@@ -35,6 +35,17 @@ truncate_to_repo = false
 'Downloads' = ' '
 'Music' = ' '
 'Pictures' = ' '
+
+[os]
+disabled = false
+style = "bg:color_orange fg:color_fg0"
+
+[os.symbols]
+Windows = "󰍲"
+Raspbian = "󰐿"
+Macos = "󰀵"
+Linux = "󰌽"
+Arch = "󰣇"
 
 [fill]
 symbol = ' '
@@ -57,33 +68,25 @@ min_time = 500
 style = 'fg:gray'
 format = '[$duration]($style)'
 
-[palettes.catppuccin_mocha]
-rosewater = "#f5e0dc"
-flamingo = "#f2cdcd"
-pink = "#f5c2e7"
-mauve = "#cba6f7"
-red = "#f38ba8"
-maroon = "#eba0ac"
-peach = "#fab387"
-yellow = "#f9e2af"
-green = "#a6e3a1"
-teal = "#94e2d5"
-sky = "#89dceb"
-sapphire = "#74c7ec"
-blue = "#89b4fa"
-lavender = "#b4befe"
-text = "#cdd6f4"
-subtext1 = "#bac2de"
-subtext0 = "#a6adc8"
-overlay2 = "#9399b2"
-overlay1 = "#7f849c"
-overlay0 = "#6c7086"
-surface2 = "#585b70"
-surface1 = "#45475a"
-surface0 = "#313244"
-base = "#1e1e2e"
-mantle = "#181825"
-crust = "#11111b"
+[palettes.gruvbox_light]
+red     = "#cc241d"
+green   = "#98971a"
+yellow  = "#d79921"
+blue    = "#458588"
+purple  = "#b16286"
+teal    = "#689d6a"
+orange  = "#d65d0e"
+subtext = "#7c6f64"
+
+[palettes.dayfox]
+red     = "#e26d5c"
+green   = "#6dae83"
+yellow  = "#d19a66"
+blue    = "#6099c0"
+purple  = "#957fb8"
+teal    = "#5aafb0"
+orange  = "#d4956a"
+subtext = "#a8adb7"
 
 # Disable the package module, hiding it from the prompt completely
 [package]
